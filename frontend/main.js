@@ -1,14 +1,14 @@
 
 const [path, query] = window.location.pathname.split('?')
-const {projectName, dbName} = require('../details/project-details')
 const login = require('./src/login')
 const signup = require('./src/signup')
+const protectedPage = require('./src/protected-page')
 
 const pageInitializer = {
     '/': login.init,
     '/index.html': login.init,
-    '/signup.html': signup.init
+    '/signup.html': signup.init,
+    '/protected-page.html': protectedPage.init
 }
 
-document.querySelector('title').innerHTML = projectName
 pageInitializer[path]()
