@@ -1,5 +1,6 @@
 
 const [path, query] = window.location.pathname.split('?')
+const {projectName, dbName} = require('../details/project-details')
 const login = require('./src/login')
 const signup = require('./src/signup')
 
@@ -9,4 +10,5 @@ const pageInitializer = {
     '/signup.html': signup.init
 }
 
+document.querySelector('title').innerHTML = projectName
 pageInitializer[path]()

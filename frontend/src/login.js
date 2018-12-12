@@ -1,5 +1,5 @@
-const axios = require('axios')
-const baseURL = 'http://localhost:3000'
+const model = require('./model')
+
 function init(){
     document.addEventListener('keyup', isFilled)
 }
