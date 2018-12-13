@@ -1,10 +1,21 @@
-# Express PostgreSQL Boilerplate
+![turnkey logo](icon.png) 
+# Turnkey
+Skip the set up - jump into the fun stuff!
 
-## Set up
-1. Fork and clone this repo
-2. From ./ run `npm install`
-3. From ./ run `createdb ____` inserting the name of your database
-4. In ./backend/knexfile.js change the `dbName` variable to match your new database
-5. From ./backend run `mv .env.example .env` and change the secret in the new .env file
-6. From ./backend run `npm run dev`
-7. In a new tab from ./frontend run `npm run dev`
+## What is it?
+### Turnkey is a boilerplate, which creates...
+* Login, signup up, and protected HTML pages
+* An Express server using models, routes, and controllers (opinionated architecture for life!)
+* A PostgreSQL database to store user signups
+
+### Authentication? Turnkey's got you covered.
+Turnkey stores hashed passwords using bcrypt and uses JSON Web Tokens to authenticate users.
+
+
+## How do I use it?
+1. Clone this repo
+2. Install Node.JS if necessary
+3. In the cloned repo run `sh init.sh`
+4. Designate a project and database name
+5. Start coding!
+

@@ -2,7 +2,7 @@ const axios = require('axios')
 const baseURL = 'http://localhost:3000'
 
 function init(){
-    document.addEventListener('keyup', isFilled)
+ document.addEventListener('keyup', isFilled)
 }
 
 function isFilled(){
